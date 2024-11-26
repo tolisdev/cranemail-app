@@ -55,5 +55,5 @@ app.on('window-all-closed', () => {
 function updateViewBounds() {
     const [width, height] = mainWindow.getSize();
     // The navbar is 50px tall, adjust as needed if the navbar height changes
-    view.setBounds({ x: 0, y: 50, width: width, height: height - 50 });
+    view.setBounds({ x: 0, y: 50, width: width - 50, height: height - 100 });
 }
