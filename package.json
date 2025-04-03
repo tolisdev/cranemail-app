@@ -1,6 +1,6 @@
 {
-  "name": "webmail-app",
-  "version": "1.0.0",
+  "name": "craneapp",
+  "version": "1.1.0",
   "description": "CraneMail Desktop App",
   "main": "main.js",
   "scripts": {
@@ -9,13 +9,18 @@
   },
   "devDependencies": {
     "electron": "^33.2.0",
-    "electron-builder": "^25.1.8"
+    "electron-builder": "23.0.2"
   },
   "build": {
     "appId": "com.apostolosk.cranemailapp",
     "productName": "CraneMail",
+    "directories": {
+      "output": "release-builds"
+    },
     "files": [
       "index.html",
+      "popup.html",
+      "popupPreload.js",
       "main.js",
       "preload.js",
       "node_modules/**/*",
@@ -25,7 +30,8 @@
       "category": "public.app-category.utilities"
     },
     "win": {
-      "target": "nsis"
+      "target": "nsis",
+      "icon": "crane.ico"
     }
   }
 }
