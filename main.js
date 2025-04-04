@@ -9,7 +9,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 1200,
     height: 800,
-    icon: path.join(__dirname, 'crane.ico'),
+    icon: path.join(__dirname, 'icon.ico'),
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       contextIsolation: true,
@@ -93,5 +93,5 @@ app.on('window-all-closed', () => {
 
 function updateViewBounds() {
   const [width, height] = mainWindow.getSize();
-  view.setBounds({ x: 0, y: 40, width, height: height - 40 });
+  view.setBounds({ x: 0, y: 50, width, height: height - 80 });
 }

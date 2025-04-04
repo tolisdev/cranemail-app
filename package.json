@@ -12,26 +12,28 @@
     "electron-builder": "23.0.2"
   },
   "build": {
-    "appId": "com.apostolosk.cranemailapp",
-    "productName": "CraneMail",
-    "directories": {
-      "output": "release-builds"
-    },
-    "files": [
-      "index.html",
-      "popup.html",
-      "popupPreload.js",
-      "main.js",
-      "preload.js",
-      "node_modules/**/*",
-      "package.json"
-    ],
-    "mac": {
-      "category": "public.app-category.utilities"
-    },
-    "win": {
-      "target": "nsis",
-      "icon": "crane.ico"
-    }
+  "appId": "com.apostolosk.cranemailapp",
+  "productName": "CraneMail",
+  "directories": {
+    "output": "release-builds"
+  },
+  "files": [
+    "index.html",
+    "popup.html",
+    "popupPreload.js",
+    "main.js",
+    "preload.js",
+    "node_modules/**/*",
+    "package.json"
+  ],
+  "mac": {
+    "category": "public.app-category.utilities",
+    "target": ["dmg", "zip"],
+    "icon": "icon.icns"
+  },
+  "win": {
+    "target": "nsis",
+    "icon": "icon.ico"
   }
+}
 }
