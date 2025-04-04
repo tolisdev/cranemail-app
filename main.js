@@ -93,5 +93,5 @@ app.on('window-all-closed', () => {
 
 function updateViewBounds() {
   const [width, height] = mainWindow.getSize();
-  view.setBounds({ x: 0, y: 50, width, height: height - 80 });
+  view.setBounds({ x: 0, y: 50, width: width - 10, height: height - 80 });
 }
