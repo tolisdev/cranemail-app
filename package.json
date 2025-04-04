@@ -22,6 +22,7 @@
     "popup.html",
     "popupPreload.js",
     "main.js",
+    "icon.png",
     "preload.js",
     "node_modules/**/*",
     "package.json"
